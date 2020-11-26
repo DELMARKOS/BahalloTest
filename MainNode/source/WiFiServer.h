@@ -26,14 +26,6 @@ void InitServer(){
   Serial.println("MAC: " + WiFi.softAPmacAddress());
 }
 
-void displayInfo(WiFiClient client){
-    Serial.println("From the station: " + client.readStringUntil('\r'));
-    client.flush();
-    
-    Serial.print("Byte sent to the station: ");
-    Serial.println(client.println("RSSI?" + '\r'));
-}
-
 String Listen(){
 
   WiFiClient client = server.available();// Listen for incoming clients
