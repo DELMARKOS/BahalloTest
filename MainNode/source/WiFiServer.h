@@ -34,17 +34,5 @@ void displayInfo(WiFiClient client){
     Serial.println(client.println("RSSI?" + '\r'));
 }
 
-String Listen(){
 
-  WiFiClient client = server.available();// Listen for incoming clients
-
-  if(!client)return "\0";
-  
-  if(client.connected()){
-    if(client.available())Serial.write(client.read());  
-    client.stop();
-    displayInfo(client);
-    
-    return client.readStringUntil('\r');
-  }else return "\0";
 }
