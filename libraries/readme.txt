@@ -1,1 +1,1 @@
-/*This is a comment written using C */
+# This is a comment written using Python
