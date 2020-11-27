@@ -30,7 +30,7 @@ void parseNMEA(){
 bool isGGA(){
   return (GPSBuffer[1] == 'G' && (GPSBuffer[2] == 'P' || GPSBuffer[2] == 'N') && GPSBuffer[3] == 'G' && GPSBuffer[4] == 'G' && GPSBuffer[5] == 'A');
 }
-
+//Sxolio
 //////////////////////////////////////////////////////////////////////////////////
 //Convert NMEA latitude & longitude to decimal (Degrees)
 //  Notice that for latitude of 0302.78469,
