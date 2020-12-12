@@ -27,7 +27,7 @@ void loop() {
 
   //Data += Listen();
   
-  //PressureTemperaturePrint();/* display */
+  //PressureTemperaturePrint();
   //for(int i=0; i<3; i++)Data += String(getPrTemAlt()[i]);
   
   //GPSrun();
