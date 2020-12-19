@@ -92,6 +92,7 @@ bool isValidLocation(){
   return (gps_latitude != 0.0 && gps_longitude != 0.0 && (lat_direction == 'N' || lat_direction=='S') && (lgt_direction=='E'|| lgt_direction=='W'));
 }
 
+// here there and nowhere
 void display_location(){
   Serial.println("==============");
   Serial.print("Location: ");
